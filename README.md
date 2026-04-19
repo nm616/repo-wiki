@@ -40,7 +40,7 @@ No prompting required. Claude just knows.
 
 ```bash
 # Clone the plugin
-git clone https://github.com/nigelmorford/repo-wiki.git ~/.claude/plugins/repo-wiki
+git clone https://github.com/nm616/repo-wiki.git ~/.claude/plugins/repo-wiki
 
 # In Claude Code, install it
 /plugin install ~/.claude/plugins/repo-wiki
