@@ -1,8 +1,5 @@
 ---
-name: update
-description: This skill is invoked by the user as /repo-wiki:update to manually trigger a wiki update for the current session. Records session context, decisions made, and updates the project wiki at .claude/wiki/. Accepts an optional argument describing the topic or decision to emphasize.
-argument-hint: "[optional: topic or decision to highlight]"
-version: 0.1.0
+description: Manually trigger a wiki update for the current session. Records session context, decisions made, and updates the project wiki at .claude/wiki/. Accepts an optional topic or decision to emphasize as $ARGUMENTS.
 ---
 
 # Update Wiki
@@ -30,7 +27,7 @@ When this skill is invoked, trigger a comprehensive wiki update for the current 
 
 ## With Optional Argument
 
-If the user provides a topic argument (e.g., `/repo-wiki:update auth refactor`), pass that topic to the archivist as the primary focus for the session entry title and content.
+If the user provided a topic (via `$ARGUMENTS`, e.g., `/repo-wiki:update auth refactor`), pass that topic to the archivist as the primary focus for the session entry title and content.
 
 ## Quality Criteria for a Good Update
 

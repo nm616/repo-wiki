@@ -1,5 +1,4 @@
 {
-  "description": "Automatically update the repo wiki before context compression and at session end.",
   "hooks": {
     "PreCompact": [
       {

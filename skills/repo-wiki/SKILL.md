@@ -1,7 +1,5 @@
 ---
-name: repo-wiki
 description: This skill should be used when the user asks "catch me up on this project", "what does this project do", "what decisions were made", "what's the context here", "project history", "what was decided", "summarize what we've done", "how does the wiki work", "what's in the wiki", or when detailed guidance is needed on reading or using the repo wiki at .claude/wiki/. Note: the CLAUDE.md in each project already instructs Claude to check the wiki proactively — this skill provides the full reference on wiki structure and conventions.
-version: 0.1.0
 ---
 
 # Repo Wiki

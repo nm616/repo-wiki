@@ -36,25 +36,27 @@ No prompting required. Claude just knows.
 
 ## Installation
 
-### From GitHub (recommended)
+### Option 1: Official marketplace (recommended)
 
-Inside Claude Code, run:
+repo-wiki is submitted to the Anthropic plugin marketplace. Once listed, install it from inside Claude Code:
 
 ```
-/plugin install https://github.com/nm616/repo-wiki
+/plugin install repo-wiki
 /reload-plugins
 ```
 
-### From local source
+### Option 2: Local install from source
 
+```bash
+git clone https://github.com/nm616/repo-wiki.git
+claude --plugin-dir ./repo-wiki
 ```
-/plugin install /path/to/repo-wiki
-/reload-plugins
-```
+
+Or to install permanently, copy the directory to your Claude plugins folder and enable it via `/plugin`.
 
 ### Verify installation
 
-After reloading, you should see `repo-wiki` in `/plugins`. The plugin activates automatically on your next session.
+After loading, run `/help` — you should see `repo-wiki:update` listed under skills. The plugin activates automatically on your next project session.
 
 ---
 
