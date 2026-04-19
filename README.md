@@ -36,13 +36,11 @@ No prompting required. Claude just knows.
 
 ## Installation
 
-### Option 1: Official marketplace (recommended)
-
-repo-wiki is submitted to the Anthropic plugin marketplace. Once listed, install it from inside Claude Code:
+### Option 1: From marketplace
 
 ```
-/plugin install repo-wiki
-/reload-plugins
+/plugin marketplace add nm616/repo-wiki
+/plugin install repo-wiki@repo-wiki
 ```
 
 ### Option 2: Local install from source
@@ -51,8 +49,6 @@ repo-wiki is submitted to the Anthropic plugin marketplace. Once listed, install
 git clone https://github.com/nm616/repo-wiki.git
 claude --plugin-dir ./repo-wiki
 ```
-
-Or to install permanently, copy the directory to your Claude plugins folder and enable it via `/plugin`.
 
 ### Verify installation
 

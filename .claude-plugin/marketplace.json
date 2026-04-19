@@ -1,0 +1,30 @@
+{
+  "name": "repo-wiki",
+  "id": "repo-wiki",
+  "owner": {
+    "name": "nm616"
+  },
+  "metadata": {
+    "description": "Persistent project wiki for Claude Code. Auto-captures decisions, session context, and project history.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "repo-wiki",
+      "source": "./",
+      "description": "Gives Claude persistent project memory across sessions. Records decisions, session summaries, and project context into .claude/wiki/. Injects CLAUDE.md instructions so Claude proactively references the wiki every session.",
+      "version": "0.1.0",
+      "author": {
+        "name": "nm616"
+      },
+      "keywords": [
+        "memory",
+        "wiki",
+        "context",
+        "decisions",
+        "sessions"
+      ],
+      "category": "workflow"
+    }
+  ]
+}
