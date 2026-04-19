@@ -38,23 +38,17 @@ No prompting required. Claude just knows.
 
 ### From GitHub (recommended)
 
-```bash
-# Clone the plugin
-git clone https://github.com/nm616/repo-wiki.git ~/.claude/plugins/repo-wiki
+Inside Claude Code, run:
 
-# In Claude Code, install it
-/plugin install ~/.claude/plugins/repo-wiki
-
-# Reload plugins
+```
+/plugin install https://github.com/nm616/repo-wiki
 /reload-plugins
 ```
 
-### From source
+### From local source
 
-```bash
-# In Claude Code
+```
 /plugin install /path/to/repo-wiki
-
 /reload-plugins
 ```
 
