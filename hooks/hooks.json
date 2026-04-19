@@ -1,0 +1,29 @@
+{
+  "description": "Automatically update the repo wiki before context compression and at session end.",
+  "hooks": {
+    "PreCompact": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Context compression is about to occur. Check if .claude/wiki/ exists in the current project directory. If this session had any significant work (decisions made, features built, problems solved, architecture discussed), invoke the wiki-archivist agent to save a pre-compact session entry to .claude/wiki/. Use 'pre-compact' as the log entry type. If only trivial things happened (brief questions, no meaningful decisions or code changes), skip the wiki update.",
+            "timeout": 60
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "This session is ending. Check if .claude/wiki/ exists in the current project directory. If this session had significant work (features built, decisions made, problems solved, architecture discussed), invoke the wiki-archivist agent to save a session-end entry to .claude/wiki/. Use 'session-end' as the log entry type. If the session was brief or trivial (only minor clarifications, no meaningful work), skip the wiki update. After completing or skipping, approve the stop.",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}

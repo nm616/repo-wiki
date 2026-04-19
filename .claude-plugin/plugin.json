@@ -1,0 +1,10 @@
+{
+  "name": "repo-wiki",
+  "version": "0.1.0",
+  "description": "Persistent project wiki that auto-captures decisions, sessions, and context. Survives new sessions and context compression via .claude/wiki/ inside each project.",
+  "author": {
+    "name": "Elevate Your Data",
+    "email": "nigel.morford@elevateyourdata.com"
+  },
+  "keywords": ["memory", "wiki", "context", "decisions", "sessions"]
+}
